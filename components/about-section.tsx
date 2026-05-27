@@ -91,7 +91,7 @@ export default function AboutSection() {
                 <div className="text-gray-500 text-sm mt-1">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600">50+</div>
+                <div className="text-3xl font-bold text-amber-600">20+</div>
                 <div className="text-gray-500 text-sm mt-1">Menu Items</div>
               </div>
               <div className="text-center">

@@ -7,19 +7,19 @@ import { ExternalLink } from "lucide-react";
 
 const menuHighlights = [
   {
-    name: "Sashimi Selection",
-    description: "Fresh, premium-cut fish served with wasabi and pickled ginger",
-    image: "https://images.pexels.com/photos/3729811/pexels-photo-3729811.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
+    name: "Signature Lobster",
+    description: "A whole lobster, delicately prepared four ways—from pristine sashimi to comforting miso.",
+    image: "/images/signature-lobster.jpg",
   },
   {
     name: "Grilled Specialties",
     description: "Charcoal-grilled dishes with authentic Japanese seasonings",
-    image: "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
+    image: "/images/grilled-specialties.jpg",
   },
   {
     name: "Chef's Selection",
     description: "Curated tasting experience of our finest dishes",
-    image: "https://images.pexels.com/photos/3764647/pexels-photo-3764647.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
+    image: "/images/chefs-selection.jpg",
   },
 ];
 
