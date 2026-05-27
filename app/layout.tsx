@@ -14,15 +14,15 @@ export const metadata: Metadata = {
   description: 'Experience authentic Japanese cuisine at ICHIE, located in Sydney Fish Market. Fresh sashimi, grilled specialties, and traditional Japanese dishes prepared with passion and precision.',
   keywords: 'Japanese restaurant, Sydney Fish Market, Japanese cuisine, sashimi, sushi, Glebe restaurant',
   openGraph: {
-    title: 'ICHIE | Authentic Japanese Restaurant',
-    description: 'Experience authentic Japanese cuisine at ICHIE in Sydney Fish Market',
+    title: 'ICHIÉ 一会 | Authentic Japanese Restaurant',
+    description: 'Experience authentic Japanese cuisine at ICHIÉ 一会 in Sydney Fish Market',
     type: 'website',
     locale: 'en_AU',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ICHIE | Authentic Japanese Restaurant',
-    description: 'Experience authentic Japanese cuisine at ICHIE in Sydney Fish Market',
+    title: 'ICHIÉ 一会 | Authentic Japanese Restaurant',
+    description: 'Experience authentic Japanese cuisine at ICHIÉ 一会 in Sydney Fish Market',
   },
 };
 
