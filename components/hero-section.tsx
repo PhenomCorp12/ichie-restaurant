@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ChevronDown, UtensilsCrossed } from "lucide-react";
+import LogoImg from "@/public/ICHIE-LOGO.png";
 
 export default function HeroSection() {
   return (
@@ -54,7 +55,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-4 tracking-tight"
           >
-            ICHIE
+            <img src={LogoImg.src} alt="ICHIÉ 一会" className="w-48 mx-auto mb-4" />
           </motion.h1>
 
           <motion.div
@@ -89,7 +90,7 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <a
-              href="https://www.nowbookit.com/?accountid=bf545626-0fad-4544-a51f-bd9197b955b2"
+              href="https://bookings.nowbookit.com/?accountid=bf545626-0fad-4544-a51f-bd9197b955b2&venueid=14217&theme=light&colors=hex,000000"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center px-8 py-4 bg-amber-600 text-white font-semibold rounded-full hover:bg-amber-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"

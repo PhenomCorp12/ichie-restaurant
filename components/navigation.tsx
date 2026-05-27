@@ -50,7 +50,7 @@ export default function Navigation() {
                 <span className={`text-3xl font-bold tracking-tight ${
                   scrolled ? "text-gray-900" : "text-white"
                 }`}>
-                  ICHIE
+                  ICHIÉ 一会
                 </span>
               </Link>
             </motion.div>
@@ -84,7 +84,7 @@ export default function Navigation() {
               className="hidden md:block"
             >
               <a
-                href="https://www.nowbookit.com/?accountid=bf545626-0fad-4544-a51f-bd9197b955b2"
+                href="https://bookings.nowbookit.com/?accountid=bf545626-0fad-4544-a51f-bd9197b955b2&venueid=14217&theme=light&colors=hex,000000"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-2.5 bg-amber-600 text-white font-medium rounded-full hover:bg-amber-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"

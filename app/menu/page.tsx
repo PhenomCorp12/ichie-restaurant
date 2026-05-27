@@ -4,85 +4,221 @@ import { motion } from "framer-motion";
 import { ArrowLeft, UtensilsCrossed } from "lucide-react";
 import Link from "next/link";
 import { useEffect } from "react";
+import LogoLongBlack from "@/public/ICHIE-LOGO black.png";
 
 const menuCategories = [
   {
-    name: "Sashimi",
+    name: "Signature Dish",
     items: [
       {
-        name: "Salmon Sashimi",
-        description: "Fresh Norwegian salmon, thinly sliced",
+        name: "Live Lobster",
+        description: "Sashimi, Butter, Karaage, Miso Soup",
+        price: "MP",
+      },
+    ],
+  },
+  {
+    name: "Main (BBQ Char Grill)",
+    items: [
+      {
+        name: "Seafood Catch",
+        description: "Calamari, Prawn, Morton Bay Bug, Lemon, Chips, Salad",
+        price: "$34",
+      },
+      {
+        name: "Swordfish Steak",
+        description: "Char-grilled",
+        price: "$32",
+      },
+      {
+        name: "Moreton Bay Bug",
+        description: "Char-grilled, Sweet Chilli Sauce",
+        price: "$38",
+      },
+      {
+        name: "King Prawn",
+        description: "Char-grilled, Salad, Lemon",
+        price: "$30",
+      },
+      {
+        name: "Baby Abalone",
+        description: "Pan-fried, Soy Butter",
+        price: "$35",
+      },
+      {
+        name: "Pot of Mussels",
+        description: "Steamed Mussels Zuchhini, Coriander, Garlic, Lemon",
+        price: "$32",
+      },
+      {
+        name: "Tempura Fish & Aonori Chips",
+        description: "Crispy fish tempura served with Aonori (Seaweed powder) chips, garden salad, & tartare sauce",
+        price: "$23",
+      },
+      {
+        name: "Spicy Chicken Wings & Aonori Chips",
+        description: "Deepfried Chicken Wings served with Aonori (Seaweed powder) chips, garden salad, & Lemon",
         price: "$18",
       },
       {
-        name: "Tuna Sashimi",
-        description: "Premium bluefin tuna, melt-in-your-mouth texture",
-        price: "$22",
+        name: "Seafood Jumbo Skewer",
+        description: "Prawn, Calamari, Octopus, Scallop, Assorted Vegetable",
+        price: "$18",
+      },
+    ],
+  },
+  {
+    name: "Bread",
+    items: [
+      {
+        name: "Garlic",
+        description: " ",
+        price: "$8",
       },
       {
-        name: "Chef's Selection Sashimi",
-        description: "Assortment of the day's finest fish (8 pieces)",
+        name: "Shiso Pesto",
+        description: " ",
+        price: "$9",
+      },
+      {
+        name: "Chilli Toast",
+        description: " ",
+        price: "$7",
+      },
+      {
+        name: "Plain",
+        description: " ",
+        price: "$6",
+      },
+    ],
+  },
+  {
+    name: "Oyster",
+    items: [
+      {
+        name: "1/2 Dozen Oysters",
+        description: "Natural, Lemon, Steamed Ginger Soy, Panko Fried, Tartare, Miso Mornay",
+        price: "$18",
+      },
+      {
+        name: "1 Dozen Oysters",
+        description: "Natural, Lemon, Steamed Ginger Soy, Panko Fried, Tartare, Miso Mornay",
         price: "$32",
       },
     ],
   },
   {
-    name: "Grilled Specialties",
+    name: "Light/Entrees",
     items: [
       {
-        name: "Grilled Salmon",
-        description: "Charcoal-grilled with teriyaki glaze",
-        price: "$24",
+        name: "Edamame",
+        description: "",
+        price: "$9",
       },
       {
-        name: "Grilled Wagyu Beef",
-        description: "A5 Wagyu, lightly seared with ponzu sauce",
-        price: "$38",
+        name: "Fisherman's Miso Soup",
+        description: "",
+        price: "$12",
       },
       {
-        name: "Grilled King Prawns",
-        description: "Jumbo prawns with garlic butter",
-        price: "$28",
+        name: "Chawanmushi",
+        description: "",
+        price: "$12",
+      },
+      {
+        name: "WA Octopus & Squid Karaage",
+        description: "",
+        price: "$18",
+      },
+      {
+        name: "Kingfish Collar",
+        description: "Seasoned Salt, Miso Mayonnaise Shichimi",
+        price: "$18",
       },
     ],
   },
   {
-    name: "Nigiri Sushi",
+    name: "Pasta/Linguine",
     items: [
       {
-        name: "Salmon Nigiri (2 pcs)",
-        description: "Fresh Atlantic salmon on seasoned rice",
+        name: "Abalone, Soy Butter",
+        description: "",
+        price: "$30",
+      },
+      {
+        name: "Fisherman's Marinara",
+        description: "Tomato, Cream",
+        price: "$28",
+      },
+      {
+        name: "Mentaiko, Shimeji Mushroom, Shiso, Butter",
+        description: "",
+        price: "$26",
+      },
+    ],
+  },
+  {
+    name: "Sides",
+    items: [
+      {
+        name: "Aonori Chips",
+        description: "",
         price: "$8",
       },
       {
-        name: "Tuna Nigiri (2 pcs)",
-        description: "Premium tuna belly on seasoned rice",
+        name: "Steamed Rice",
+        description: "",
+        price: "$4",
+      }
+    ],
+  },
+  {
+    name: "Cold Section",
+    items: [
+      {
+        name: "Prawn Cocktail, Aurora Sauce",
+        description: "",
+        price: "$18",
+      },
+      {
+        name: "Seafood Ceviche",
+        description: "",
+        price: "$22",
+      },
+      {
+        name: "Garden Salad",
+        description: "",
         price: "$10",
       },
       {
-        name: "Scallop Nigiri (2 pcs)",
-        description: "Sweet, fresh scallops lightly seared",
+        name: "Seaweed Salad",
+        description: "",
         price: "$12",
+      },
+      {
+        name: "Brown Rice Salad Bowl",
+        description: "",
+        price: "$15",
       },
     ],
   },
   {
-    name: "Hot Dishes",
+    name: "Kids Menu",
     items: [
       {
-        name: "Agedashi Tofu",
-        description: "Deep-fried silken tofu in dashi broth",
-        price: "$14",
+        name: "Fish & Chips",
+        description: "",
+        price: "$15",
       },
       {
-        name: "Tempura Platter",
-        description: "Assorted seasonal vegetables and prawns",
-        price: "$26",
+        name: "Nuggets & Chips",
+        description: "",
+        price: "$13",
       },
       {
-        name: "Tonkatsu",
-        description: "Crispy pork cutlet with tonkatsu sauce",
-        price: "$22",
+        name: "Kids Pasta (Tomato or Cream)",
+        description: "",
+        price: "$13",
       },
     ],
   },
@@ -108,12 +244,11 @@ export default function MenuPage() {
             </Link>
 
             <div className="flex items-center gap-2">
-              <UtensilsCrossed className="w-6 h-6 text-amber-600" />
-              <span className="text-2xl font-bold text-gray-900">ICHIE</span>
+              <img src={LogoLongBlack.src} alt="ICHIÉ 一会" className="w-36 mx-auto mb-4" />
             </div>
 
             <a
-              href="https://www.nowbookit.com/?accountid=bf545626-0fad-4544-a51f-bd9197b955b2"
+              href="https://bookings.nowbookit.com/?accountid=bf545626-0fad-4544-a51f-bd9197b955b2&venueid=14217&theme=light&colors=hex,000000"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-amber-600 text-white font-medium rounded-full hover:bg-amber-700 transition-colors text-sm"
@@ -212,7 +347,7 @@ export default function MenuPage() {
               Join us for an unforgettable Japanese culinary experience
             </p>
             <a
-              href="https://www.nowbookit.com/?accountid=bf545626-0fad-4544-a51f-bd9197b955b2"
+              href="https://bookings.nowbookit.com/?accountid=bf545626-0fad-4544-a51f-bd9197b955b2&venueid=14217&theme=light&colors=hex,000000"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-amber-600 text-white font-semibold rounded-full hover:bg-amber-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"

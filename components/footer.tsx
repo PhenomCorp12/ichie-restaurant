@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { UtensilsCrossed, Heart } from "lucide-react";
+import LogoImgLong from "@/public/ICHIE-LOGO long.png";
 
 export default function Footer() {
   return (
@@ -15,10 +16,7 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
             className="mb-6"
           >
-            <div className="flex items-center gap-2">
-              <UtensilsCrossed className="w-6 h-6 text-amber-500" />
-              <span className="text-2xl font-bold tracking-tight">ICHIE</span>
-            </div>
+            <img src={LogoImgLong.src} alt="ICHIÉ 一会" className="w-48 mx-auto mb-4" />
           </motion.div>
 
           {/* Tagline */}
@@ -38,7 +36,7 @@ export default function Footer() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex items-center gap-1 text-gray-500 text-sm"
           >
-            <span>&copy; {new Date().getFullYear()} ICHIE. Made with</span>
+            <span>&copy; {new Date().getFullYear()} ICHIÉ 一会. Made with</span>
             <Heart className="w-4 h-4 text-red-500 fill-red-500" />
             <span>in Sydney</span>
           </motion.div>

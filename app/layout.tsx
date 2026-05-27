@@ -10,7 +10,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'ICHIE | Authentic Japanese Restaurant in Sydney Fish Market',
+  title: 'ICHIÉ 一会 | Authentic Japanese Restaurant in Sydney Fish Market',
   description: 'Experience authentic Japanese cuisine at ICHIE, located in Sydney Fish Market. Fresh sashimi, grilled specialties, and traditional Japanese dishes prepared with passion and precision.',
   keywords: 'Japanese restaurant, Sydney Fish Market, Japanese cuisine, sashimi, sushi, Glebe restaurant',
   openGraph: {

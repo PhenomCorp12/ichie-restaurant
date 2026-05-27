@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import JapaneseCuisineImg from "@/public/japanese-cuisine.jpg";
 
 export default function AboutSection() {
   const ref = useRef(null);
@@ -21,7 +22,7 @@ export default function AboutSection() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/3729812/pexels-photo-3729812.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80"
+                src={JapaneseCuisineImg.src}
                 alt="Japanese cuisine"
                 className="w-full h-full object-cover"
               />
