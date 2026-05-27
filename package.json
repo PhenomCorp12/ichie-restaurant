@@ -71,5 +71,9 @@
     "typescript": "5.2.2",
     "vaul": "^0.9.9",
     "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/config-array": "^0.23.5",
+    "@eslint/object-schema": "^3.0.5"
   }
 }
