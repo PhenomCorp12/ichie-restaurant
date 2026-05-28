@@ -71,7 +71,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-xl md:text-2xl text-white/90 font-light mb-2 tracking-wide"
           >
-            Authentic Japanese Cuisine
+            Japanese Inspired Seafood Dining
           </motion.p>
 
           <motion.p
